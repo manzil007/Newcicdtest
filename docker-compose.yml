@@ -1,7 +1,7 @@
 version: '2'
 services:
   vpronginx:
-    image: visualpath/vpronginx
+    image: manzil007/vprofile-app
     ports:
       - "80:80"
   vproapp:
