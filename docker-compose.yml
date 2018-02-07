@@ -1,0 +1,16 @@
+version: '2'
+services:
+  vpronginx:
+    image: visualpath/vpronginx
+    ports:
+      - "80:80"
+  vproapp:
+    image: visualpath/vpromultiapp
+    ports:
+      - "8080:8080"
+  vprodb:
+    image: visualpath/vpromultidb
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=vprodbpas
